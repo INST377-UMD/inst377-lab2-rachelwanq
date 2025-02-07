@@ -1,17 +1,33 @@
 <html>
     <head>
         <title>Contact Form</title>
+        <style>
+            body{
+                background-color: rgba(245, 218, 222, 0.912);
+            }
+            .contactUs{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 200px;
+                margin-right: 80px;
+                font-size: 30px;
+            }
+        </style>
     </head>
     <body>
         <h1>Contact Me!</h1>
-        <form name = "contactForm">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName">
-            <br>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName">
-            <br>
-            <input type="submit" value="Send it NEOW">
+        <form name = "contactForm" method="get" action="Lab_2_Submit.html">
+            <div class="contactUs">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+                <br>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Send it NEOW">
+            </div>
         </form>
     </body>
 </html>
