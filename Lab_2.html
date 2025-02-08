@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Contact Form</title>
+        <title>Burger Order Form</title>
         <style>
             body{
                 background-color: rgba(245, 218, 222, 0.912);
@@ -12,11 +12,25 @@
                 margin-right: 80px;
                 font-size: 30px;
             }
+            input{
+                background-color: palevioletred;
+            }
+            input[type="submit"]{
+                display: block;
+                background-color: lightblue;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 20px;
+            }
+            input[type="submit"]:hover{
+                background-color: orchid;
+            }
+    
         </style>
     </head>
     <body>
-        <h1>Contact Me!</h1>
-        <form name = "contactForm" method="get" action="Lab_2_Submit.html">
+        <h1>Name for Burger Order</h1>
+        <form name = "burgerForm" method="get" action="Lab_2_Submit.html">
             <div class="contactUs">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" required>
@@ -25,7 +39,7 @@
                 <input type="text" id="lastName" required>
                 <br>
             </div>
-            <input type="submit" value="Send it NEOW">
+            <input type="submit" value="Give me my burger!">
         </form>
     </body>
 </html>
